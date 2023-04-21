@@ -1,0 +1,103 @@
+ .body1{
+    margin: 0;
+    background: lightgray;
+    text-align: center;
+    font-family: sans-serif;
+    color: #fefefe;
+  }
+  .container1{
+    position: relative;
+    width: 320px;
+    padding-top:200px;
+    margin: 100px auto 0 auto;
+    perspective: 1000px;
+  }
+
+  .carousel1{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    animation: rotate360 60s infinite forwards linear;
+  }
+  .carousel__face {
+    border:5px solid  rgb(181, 117, 60);
+    position: absolute;
+    width: 300px;
+    height: 187px;
+    top: 20px;
+    left: 10px;
+    right: 10px;
+    background-size: cover;
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    display: flex;
+  }
+
+  .span1{
+    margin: auto;
+    font-size: 2rem;
+  }
+
+  .carousel__face:nth-child(1) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/23.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(0deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(2) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/24.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(40deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(3) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/25.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(80deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(4) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/27.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(120deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(5) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/28.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(160deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(6) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/29.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(200deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(7) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/30.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(240deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(8) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/31.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(280deg) translateZ(430px);
+  }
+  .carousel__face:nth-child(9) {
+    background-image: linear-gradient(to top, rgba(11, 10, 10, 0), rgba(0, 0, 0, 0.743)), url("Template/32.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    transform: rotateY(320deg) translateZ(430px);
+  }
+
+  @keyframes rotate360 {
+    from {
+      transform: rotateY(0deg);
+    }
+    to {
+      transform: rotateY(-360deg);
+    }
+  }
